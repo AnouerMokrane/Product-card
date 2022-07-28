@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1,
+.new-price {
+    font-family: 'Fraunces', serif;
+}
+.container {
+
+    width: 650px;
+    max-width: 80%;
+    display: flex;
+    box-shadow:  0 0px 4px -1px black;
+    border-radius: 15px;
+}
+@media (max-width:767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+img {
+    width: 50%; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    
+}
+@media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+    
+}
+@media (max-width:767px) {
+    img {
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+}
+.container .text-content {
+    background-color: white;
+    max-width: 100%;
+    padding: 40px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+@media (max-width:767px) {
+   .text-content{
+        border-bottom-left-radius: 15px;
+    }
+}
+.text-content h2 {
+    color: hsl(228, 12%, 48%);
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+
+.text-content h1 {
+    font-weight: 700;
+margin-bottom: 30px;
+}
+.text-content p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: hsl(228, 12%, 48%);
+}
+.text-content .new-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    margin-right: 15px;
+}
+.text-content .price {
+    margin-bottom: 30px;
+}
+button {
+    padding: 15px 10px;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover {
+    background-color: hsl(158, 55%, 30%);
+}
+button img {
+    width: 14px;
+    margin-right: 10px;
+}
+.attribution {
+    padding: 15px;
+    bottom: 0;
+}
